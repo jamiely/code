@@ -1,0 +1,33 @@
+title: Bunny Matcher
+platform: iOS
+languages: 
+  - Objective-C
+tools: 
+  - XCode
+  - XVim
+  - shenzhen
+  - OCunit
+  - Inkscape
+  - ImageMagick
+  - bxfr
+opensource: true
+description: >
+  A [Super Munchers](http://www.youtube.com/watch?v=9RtRykIE_1A) clone for 
+  iOS. Written in Objective-C.
+links:
+  - type: article
+    url: http://blog.jamie.ly/software/2013/01/09/ios-app-bunny-matcher.html
+  - type: iTunes
+    url: https://itunes.apple.com/us/app/bunny-matcher/id590498392?ls=1&mt=8
+  - type: source
+    url: https://github.com/jamiely/bunny-matcher
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2013/01/iOS-Simulator-Screen-shot-Dec-31-2012-11.54.42-PM.png
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2013/01/bunny_sprites.png
+tags:
+  - objective-c
+  - game development
+  - educational game
+  - svg
+

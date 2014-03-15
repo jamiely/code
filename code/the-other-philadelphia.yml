@@ -1,0 +1,18 @@
+name: The Other Philadelphia
+languages: 
+  - Ruby
+  - HTML
+  - CSS
+opensource: false
+frameworks: 
+  - Rails
+  - Facebook Connect
+description: > 
+  A Rails app with FB auth bringing the faceless statistics of Philadelphia
+  close to home by applying them to your Facebook friends.
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/code-for-america-philly-2012
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2012/02/Screen-Shot-2012-02-28-at-9.59.31-PM.png
+
