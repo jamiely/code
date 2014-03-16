@@ -18,6 +18,13 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    convertData: {
+      build: {
+        src: './code/*.yml',
+        dest: './app/code/json/'
+      }
+    },
+
     // Project settings
     yeoman: {
       // configurable paths
@@ -364,6 +371,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
+      'convertData',
       'watch'
     ]);
   });
@@ -401,6 +409,39 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
-    'build'
+    'build',
+    'convertData'
   ]);
+
+  grunt.registerMultiTask('convertData', 'Converts data from yaml to json.', function() {
+    console.log(this);
+    var YAML = require('yamljs');
+    var path = require('path');
+    var fs = require('fs');
+    var done = this.async();
+    var asy = require('async');
+    var _ = require('lodash');
+
+    var destDir = this.data.dest;
+    fs.mkdirSync(destDir);
+    var tasks = _.map(this.filesSrc, function(file) {
+      var obj = YAML.load(file);
+      var json = JSON.stringify(obj);
+      var dest = path.join(destDir, path.basename(file, '.yml') + '.json');
+      grunt.log.writeln('--> Loaded ' + file);
+      grunt.log.writeln('--> Destination ' + dest);
+      return function(callback) {
+        grunt.log.writeln('--> Attempting to write destination ' + dest);
+        fs.writeFile(dest, json, function(err) {
+          if(!err) {
+            grunt.log.writeln('--> Wrote destination ' + dest);
+          }
+          callback(err);
+        });
+      };
+    });
+    asy.parallel(tasks, function(err, results) {
+      done(!err);
+    });
+  });
 };
