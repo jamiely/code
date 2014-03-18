@@ -423,16 +423,30 @@ module.exports = function (grunt) {
     var _ = require('lodash');
 
     var destDir = this.data.dest;
-    fs.mkdirSync(destDir);
+    try { fs.mkdirSync(destDir); } catch(e) {}
+    // will contain all the projects
+    var all = [];
+    var fsOptions = {
+      flat: 'w+' // overwrite
+    };
+    var marked = require('marked');
+
+    function formatDescription(desc) {
+      return marked(desc);
+    }
+
     var tasks = _.map(this.filesSrc, function(file) {
       var obj = YAML.load(file);
+      obj.description = formatDescription(obj.description);
+      all.push(obj);
+
       var json = JSON.stringify(obj);
       var dest = path.join(destDir, path.basename(file, '.yml') + '.json');
       grunt.log.writeln('--> Loaded ' + file);
       grunt.log.writeln('--> Destination ' + dest);
       return function(callback) {
         grunt.log.writeln('--> Attempting to write destination ' + dest);
-        fs.writeFile(dest, json, function(err) {
+        fs.writeFile(dest, json, fsOptions, function(err) {
           if(!err) {
             grunt.log.writeln('--> Wrote destination ' + dest);
           }
@@ -440,7 +454,22 @@ module.exports = function (grunt) {
         });
       };
     });
-    asy.parallel(tasks, function(err, results) {
+
+    // also write the final file
+    var projectsPath = path.join(destDir, 'projects.json');
+    var allTask = function(callback) {
+      grunt.log.writeln('--> Attempting to write all projects at ' + projectsPath);
+      fs.writeFile(projectsPath, JSON.stringify(all), fsOptions, function(err) {
+        if(!err) {
+          grunt.log.writeln('--> Wrote all projects at ' + projectsPath);
+        }
+        callback(err);
+      });
+    };
+
+    tasks.push(allTask);
+
+    asy.parallel(tasks, function(err) {
       done(!err);
     });
   });

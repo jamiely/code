@@ -6,7 +6,7 @@ angular.module('codeGalleryApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $sceDelegateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -15,4 +15,10 @@ angular.module('codeGalleryApp', [
       .otherwise({
         redirectTo: '/'
       });
+
+     $sceDelegateProvider.resourceUrlWhitelist([
+       'self',
+       'https://www.youtube.com/**',
+       'http://www.youtube.com/**']);
   });
+

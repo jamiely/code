@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('codeGalleryApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', 'ProjectService', function ($scope, projects) {
+    projects.index().then(function(p) {
+      $scope.projects = p;
+    });
+  }]);

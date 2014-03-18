@@ -17,6 +17,7 @@ description: >
 links:
   - type: article
     url: http://blog.jamie.ly/software/2013/01/09/ios-app-bunny-matcher.html
+    title: iOS App: Bunny Matcher
   - type: iTunes
     url: https://itunes.apple.com/us/app/bunny-matcher/id590498392?ls=1&mt=8
   - type: source

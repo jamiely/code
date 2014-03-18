@@ -11,10 +11,12 @@ opensource: true
 links:
   - type: demo
     url: http://jamie.ly/labs/tetris-attack-clojurescript/index.html
+    title: Tetris Attack Clojurescript Demo
   - type: source
     url: https://github.com/jamiely/simple-clojure-game
   - type: article
     url: http://jamie.ly/wordpress/programming/software/clojurescript-tetris-attack
+    title: Tetris Attack in Clojurescript
   - type: image
     url: http://jamie.ly/wordpress/wp-content/uploads/2013/02/8c8eb47.png
     slug: image-play
