@@ -12,8 +12,20 @@ tools:
   - bxfr
 opensource: true
 description: >
-  A [Super Munchers](http://www.youtube.com/watch?v=9RtRykIE_1A) clone for 
-  iOS. Written in Objective-C.
+  Bunny Matcher is a native iOS puzzle game written in Objective-C. 
+  Ithas the same concept as the classic game 
+  [Super Munchers](http://www.youtube.com/watch?v=9RtRykIE_1A).
+
+
+  You control a bunny which must match words on a grid to a presented
+  topic. For example, if the topic is Planets, you may have to select
+  words like Mars, Earth, and Venus. 
+  
+
+  Conflict comes in the form of
+  non-topic words, which penalize the player by hurting his score, and a
+  fox that moves across the board. The player must avoid the fox, as
+  touching the fox costs 1 of 3 total lives.
 links:
   - type: article
     url: http://blog.jamie.ly/software/2013/01/09/ios-app-bunny-matcher.html

@@ -1,11 +1,9 @@
 <section class="project">
   <h2 class="col-md-10">{{ project.title }}</h2>
   <div class="col-md-6">
-    <p ng-bind-html="project.description"></p>
+    <div class="project-description"
+      ng-bind-html="project.description"></div>
 
-    <iframe class="project-main-article col-md-12" ng-src="{{ project.mainArticleLink.url }}" 
-      frameBorder="0"
-      ng-show="project.mainArticleLink"></iframe>
   </div>
   <ul class="links col-md-6">
     <li ng-repeat="link in project.links"
