@@ -1,0 +1,17 @@
+
+          <a ng-href="{{ link.url }}" ng-switch-when="image">
+            <img width="400" ng-src="{{ link.url }}">
+          </a>
+          <iframe ng-switch-when="video" width="560" height="315"
+            ng-src="{{ '//www.youtube.com/embed/' +
+            link.url.replace('http://www.youtube.com/watch?v=', '') }}" frameborder="0"
+          allowfullscreen></iframe>
+          <a ng-href="{{ link.url }}" ng-switch-default
+            ng-switch on="link.title || ''">
+            <span ng-switch-when="">
+              {{ link.type }}
+            </span>
+            <span ng-switch-default>
+              {{ link.title }}
+            </span>
+          </a>
