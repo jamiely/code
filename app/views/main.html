@@ -15,7 +15,7 @@
       <ul class="links">
         <li ng-repeat="link in project.links"
           class="link-type-{{link.type}}" ng-switch on="link.type">
-          <jal-project-link></jal-project-link>
+          <jal-project-link link="link"></jal-project-link>
         </li>
       </ul>
     </section>
