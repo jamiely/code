@@ -13,7 +13,7 @@ tools:
 opensource: true
 description: >
   Bunny Matcher is a native iOS puzzle game written in Objective-C. 
-  Ithas the same concept as the classic game 
+  It has the same concept as the classic game 
   [Super Munchers](http://www.youtube.com/watch?v=9RtRykIE_1A).
 
 

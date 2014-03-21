@@ -1,7 +1,22 @@
 title: Tetris Attack in Clojurescript
 description: >
-  An implementation of [Tetris Attack](http://en.wikipedia.org/wiki/Tetris_Attack), 
-  the beloved puzzle game in Clojurescript.
+  An implementation of [Tetris
+  Attack](http://en.wikipedia.org/wiki/Tetris_Attack), the beloved
+  puzzle game in Clojurescript. 
+
+
+  The game has a treasured place in my heart having provided me with
+  hundreds of hours of entertainment. The object of the game is to match
+  3 or more blocks.  The complexity of the game comes in setting off
+  chain reactions of matches, which throw garbage blocks onto your 
+  opponent's screen that he has to clear.
+  
+
+  This project gave me a greater sense about how to write more idiomatic
+  Clojure, including usage of the thread-first macro, and a good use case
+  for multimethods (implementing them in my code is a todo). Additionally,
+  this was one of my first completely (almost) functional games, and so 
+  was a great stepping stone in helping me to think functionally.
 platform: web
 languages: 
   - Clojurescript
