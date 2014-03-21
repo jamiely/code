@@ -18,6 +18,8 @@ angular.module('codeGalleryApp', [
 
      $sceDelegateProvider.resourceUrlWhitelist([
        'self',
+       'http://blog.jamie.ly/**',
+       'http://jamie.ly/**',
        'https://www.youtube.com/**',
        'http://www.youtube.com/**']);
   });
