@@ -1,16 +1,18 @@
 <section class="project">
-  <h2 class="col-md-10">{{ project.title }}</h2>
+  <h2 class="col-md-10 project-title">{{ project.title }}</h2>
   <div class="col-md-6">
     <div class="project-description"
       ng-bind-html="project.description"></div>
 
   </div>
-  <ul class="links col-md-6">
+  <div class="col-md-6" ng-show="project.mainImage">
+    <a ng-href="{{ project.mainImage.url }}" target="_blank">
+      <img width="400" ng-src="{{ project.mainImage.url }}">
+    </a>
+  </div>
+  <ul class="links col-md-6 list-unstyled">
     <li ng-repeat="link in project.links"
     class="link-type-{{link.type}}" ng-switch on="link.type">
-    <a ng-href="{{ link.url }}" ng-switch-when="image" target="_blank">
-      <img width="400" ng-src="{{ link.url }}">
-    </a>
     <iframe ng-switch-when="video" width="560" height="315"
       ng-src="{{ '//www.youtube.com/embed/' +
       link.url.replace('http://www.youtube.com/watch?v=', '') }}" frameborder="0"
