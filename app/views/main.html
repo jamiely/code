@@ -1,24 +1,20 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">code gallery</h3>
+<div class="row">
+  <div class="header col-md-offset-1 col-md-10">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a ng-href="#">Home</a></li>
+      <li><a ng-href="#">About</a></li>
+      <li><a ng-href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">code gallery</h3>
+  </div>
 </div>
 
 <div class="projects-container">
-  <div class="project-container" ng-repeat="project in projects">
-    <section class="project">
-      <h2>{{ project.title }}</h2>
-      <p ng-bind-html="project.description"></p>
-      <ul class="links">
-        <li ng-repeat="link in project.links"
-          class="link-type-{{link.type}}" ng-switch on="link.type">
-          <jal-project-link link="link"></jal-project-link>
-        </li>
-      </ul>
-    </section>
+  <div class="row">
+    <div class="project-container col-md-10 col-md-offset-1" 
+      ng-repeat="project in projects">
+      <jal-project project="project"></jal-project>
+    </div>
   </div>
 </div>
 

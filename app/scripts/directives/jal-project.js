@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('codeGalleryApp')
-  .directive('jalProjectLink', function () {
+  .directive('jalProject', function () {
     return {
       restrict: 'E',
       scope: {
-        link: '='
+        project: '='
       },
-      templateUrl: 'views/link.html'
+      templateUrl: 'views/project.html'
     }
   });
