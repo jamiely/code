@@ -1,8 +1,14 @@
 <section class="project">
+  <a name="{{ project.slug }}"></a>
   <h2 class="col-md-10 project-title">{{ project.title }}</h2>
   <div class="col-md-6">
     <div class="project-description"
       ng-bind-html="project.description"></div>
+    <ul class="languages list-inline">
+      <li ng-repeat="language in project.languages" class="language">
+        <span class="label label-info">{{ language }}</span>
+      </li>
+    </ul>
     <ul class="tools list-inline">
       <li ng-repeat="tool in project.tools" class="tool">
         <span class="label label-tool">{{ tool }}</span>

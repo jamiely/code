@@ -15,10 +15,17 @@
   </div>
 </div>
 
+<ul>
+  <li class="project-navigation-link" 
+    ng-repeat="project in projects">
+    <a href="" ng-href="#/#{{ project.slug }}">{{ project.title }}</a>
+  </div>
+</ul>
+
 <div class="projects-container">
   <div class="row">
     <div class="project-container col-md-10 col-md-offset-1" 
-      ng-repeat="project in projects">
+      ng-repeat="project in projects" autoscroll>
       <jal-project project="project"></jal-project>
     </div>
   </div>

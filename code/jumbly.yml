@@ -1,6 +1,21 @@
 title: Jumbly
+languages: 
+  - Objective-C
 description: >
-  A scramble word game for iOS written in Objective-C.
+  Jumbly is a word jumble-type game for iOS, written in Objective-C. You
+  are given two words. Starting with the first word, you must create a
+  new word by changing a single letter, and keep doing so, until you
+  arrive at the last word. 
+
+
+  Jumbly is a port of a previous project in ColdFusion, and uses the same
+  word corpus. A seed word is selected randomly and subsequent words
+  are selected by searching the corpus with a regular expression derived
+  from that seed. Finally, the chain of words between the seed and final 
+  word are masked, and the user is presented with the beginning and ending
+  words.
+tags: word game, game development, puzzle game
+application:
 links:
   - type: article
     url: http://jamie.ly/wordpress/programming/software/jumbly-a-jumble-game-for-ios
@@ -8,3 +23,7 @@ links:
     url: https://itunes.apple.com/us/app/jumbly/id575537890
   - type: source
     url: https://github.com/jamiely/jumbly
+  - type: image
+    url: http://www.angelforge.org/wordpress/wp-content/uploads/2012/11/screenshot_menu_iphone.png
+  - type: image
+    url: http://www.angelforge.org/wordpress/wp-content/uploads/2012/11/screenshot_portrait_iphone5.png

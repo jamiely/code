@@ -1,4 +1,6 @@
 title: Font Awesome Browser
+languages: 
+  - Java
 description: >
   A gallery and exporter for Font Awesome glyphs. Written in Java for Android.
 links:
@@ -8,3 +10,5 @@ links:
     url: https://play.google.com/store/apps/details?id=ly.jamie.fontawesomebrowser
   - type: source
     url: https://github.com/jamiely/Font-Awesome-Browser-Android
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2012/11/screenshot_icon_export.png

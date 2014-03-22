@@ -1,0 +1,37 @@
+title: Buzzy Bingo
+languages: 
+  - Objective-C
+  - Ruby
+description: >
+  I was chatting with a co-worker the other day about
+  project management, and we mentioned the prevalence of buzzwords.
+  Then, we mentioned Buzzword Bingo, and I decided that to implement a
+  Bingo application as an iOS app. I looked up Buzzword Bingo in the app
+  store and only saw two implementations. I figured I’d write this
+  anyway as it’s a simple and well known concept and I need the practice
+  anyway.
+
+
+  The app uses OCUnit for unit tests, Core Data to store
+  word lists, and storyboards for layout. A simple server is written using
+  the Sinatra light-weight Ruby web framework.
+tags: 
+  - bingo
+  - game development
+  - REST
+  - web framework
+tools: 
+  - OCUnit
+  - Core Data
+  - Sinatra
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/software/buzzy-bingo/
+  - type: iTunes
+    url: https://itunes.apple.com/us/app/buzzy-bingo/id570491609?ls=1&mt=8
+  - type: source
+    url: https://github.com/jamiely/buzzword-bingo
+  - type: video
+    url: https://www.youtube.com/watch?v=U8R1hvOoXKM
+  - type: image
+    url: https://raw.githubusercontent.com/jamiely/buzzword-bingo-ios/master/BuzzwordBingo/Assets/Default-Landscape.png

@@ -20,3 +20,5 @@ links:
     url: https://rubygems.org/gems/simulator
   - type: source
     url: https://github.com/jamiely/simulator
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2013/01/mortgage.png

@@ -443,6 +443,7 @@ module.exports = function (grunt) {
     var tasks = _.map(this.filesSrc, function(file) {
       var obj = YAML.load(file);
       obj.description = formatDescription(obj.description);
+      obj.slug = obj.slug || path.basename(file, '.yml');
       all.push(obj);
 
       var json = JSON.stringify(obj);
