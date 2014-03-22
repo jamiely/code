@@ -21,7 +21,8 @@ platform: web
 languages: 
   - Clojurescript
   - JavaScript
-tools: Chrome Web Developer
+tools: 
+  - Chrome Web Developer
 opensource: true
 links:
   - type: demo

@@ -1,0 +1,31 @@
+title: Cocos2d iOS Game: Balloon Burst
+description: >
+  An iOS game for children written using Objective-C and Cocos2d. Balloons
+  float up from the bottom of the screen. Touch them to pop them, yielding a 
+  falling treasure. The balloons have a letter on them and a word beginning
+  with that letter will sound.
+  
+
+  The game features simple particle effects and custom recorded and sounds
+  using Audacity for sound isolation.
+platform: iOS
+languages:
+  - Objective-C
+tags: 
+  - educational game
+tools:
+  - XCode
+  - Cocos2d
+  - Audacity
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/libraries/cocos2d-ios-game-balloon-burst/
+  - type: source
+    url: http://github.com/jamiely/ios-balloon-burst
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2012/01/balloon-burst-old-treasures-01.png
+  - type: image
+    url: http://www.angelforge.org/wordpress/wp-content/uploads/2012/01/balloon-burst-ipad-play-01.png
+  - type: video
+    url: http://www.youtube.com/watch?v=W6FI7X5PjN8
+

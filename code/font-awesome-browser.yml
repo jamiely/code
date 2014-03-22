@@ -6,8 +6,10 @@ description: >
 tags: 
   - fonts
   - gallery
+platform: Android
 tools:
   - Font Awesome
+  - Eclipse
 links:
   - type: article
     url: http://jamie.ly/wordpress/programming/software/font-awesome-browser

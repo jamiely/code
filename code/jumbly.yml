@@ -14,7 +14,11 @@ description: >
   from that seed. Finally, the chain of words between the seed and final 
   word are masked, and the user is presented with the beginning and ending
   words.
-tags: word game, game development, puzzle game
+platform: iOS
+tags: 
+  - word game
+  - game development
+  - puzzle game
 application:
 links:
   - type: article

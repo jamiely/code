@@ -8,7 +8,7 @@ description: >
 tags:
   - simulation
   - mathematics
-  - gem
+platform: Ruby
 languages: 
   - Ruby
 tools: 

@@ -4,22 +4,17 @@
   <div class="col-md-6">
     <div class="project-description"
       ng-bind-html="project.description"></div>
-    <ul class="languages list-inline">
+    <ul class="list-inline">
       <li ng-repeat="language in project.languages" class="language">
         <span class="label label-info">{{ language }}</span>
       </li>
-    </ul>
-    <ul class="tools list-inline">
       <li ng-repeat="tool in project.tools" class="tool">
         <span class="label label-tool">{{ tool }}</span>
       </li>
-    </ul>
-    <ul class="tags list-inline">
       <li ng-repeat="tag in project.tags" class="tag">
         <span class="label label-tag">{{ tag }}</span>
       </li>
     </ul>
-
   </div>
   <div class="col-md-6" ng-show="project.mainImage">
     <a ng-href="{{ project.mainImage.url }}" target="_blank">
@@ -30,8 +25,8 @@
     <li ng-repeat="link in project.links"
     class="link-type-{{link.type}}" ng-switch on="link.type">
     <iframe ng-switch-when="video" width="560" height="315"
-      ng-src="{{ '//www.youtube.com/embed/' +
-      link.url.replace('http://www.youtube.com/watch?v=', '') }}" frameborder="0"
+      ng-src="{{ 
+      link.url.replace('/watch?v=', '/embed/') }}" frameborder="0"
       allowfullscreen></iframe>
     <a ng-href="{{ link.url }}" ng-switch-default target="_blank"
       ng-switch on="link.title || ''">

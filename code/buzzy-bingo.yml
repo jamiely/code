@@ -1,4 +1,5 @@
 title: Buzzy Bingo
+platform: iOS
 languages: 
   - Objective-C
   - Ruby
@@ -32,6 +33,6 @@ links:
   - type: source
     url: https://github.com/jamiely/buzzword-bingo
   - type: video
-    url: https://www.youtube.com/watch?v=U8R1hvOoXKM
+    url: http://www.youtube.com/watch?v=U8R1hvOoXKM
   - type: image
     url: https://raw.githubusercontent.com/jamiely/buzzword-bingo-ios/master/BuzzwordBingo/Assets/Default-Landscape.png

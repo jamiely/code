@@ -4,7 +4,8 @@ languages:
   - HTML
   - CSS
 opensource: false
-frameworks: 
+platform: web
+tools: 
   - Rails
   - Facebook Connect
 description: > 
