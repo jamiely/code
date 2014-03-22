@@ -9,7 +9,7 @@ function anyMatchesRE(items, re) {
 
 function funProjectMatchesRegex(re) {
   return function(project) {
-    return re.test(project.name)
+    return re.test(project.title)
       || re.test(project.description) 
       || anyMatchesRE(project.tags, re)
       || anyMatchesRE(project.tools, re);
