@@ -5,6 +5,9 @@
       <li><a ng-href="#">About</a></li>
       <li><a ng-href="#">Contact</a></li>
     </ul>
+    <input placeholder="Search ..." ng-change="search(searchText)"
+      ng-model="searchText" />
+    <button ng-click="reset()">Reset</button>
     <h3 class="text-muted">code gallery</h3>
   </div>
 </div>
