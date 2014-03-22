@@ -1,8 +1,8 @@
 'use strict';
 (function(){
 
-function anyProjectTagMatchesRE(project, re) {
-  return _(project.tags).some(function(tag) {
+function anyMatchesRE(items, re) {
+  return _(items).some(function(tag) {
     return re.test(tag);
   })
 }
@@ -11,7 +11,8 @@ function funProjectMatchesRegex(re) {
   return function(project) {
     return re.test(project.name)
       || re.test(project.description) 
-      || anyProjectTagMatchesRE(project, re);
+      || anyMatchesRE(project.tags, re)
+      || anyMatchesRE(project.tools, re);
   };
 }
 

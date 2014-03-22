@@ -3,6 +3,16 @@
   <div class="col-md-6">
     <div class="project-description"
       ng-bind-html="project.description"></div>
+    <ul class="tools list-inline">
+      <li ng-repeat="tool in project.tools" class="tool">
+        <span class="label label-tool">{{ tool }}</span>
+      </li>
+    </ul>
+    <ul class="tags list-inline">
+      <li ng-repeat="tag in project.tags" class="tag">
+        <span class="label label-tag">{{ tag }}</span>
+      </li>
+    </ul>
 
   </div>
   <div class="col-md-6" ng-show="project.mainImage">
