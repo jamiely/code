@@ -1,0 +1,10 @@
+title: Font Awesome Browser
+description: >
+  A gallery and exporter for Font Awesome glyphs. Written in Java for Android.
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/software/font-awesome-browser
+  - type: play store
+    url: https://play.google.com/store/apps/details?id=ly.jamie.fontawesomebrowser
+  - type: source
+    url: https://github.com/jamiely/Font-Awesome-Browser-Android

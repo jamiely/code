@@ -1,0 +1,22 @@
+title: Simulator
+description: >
+  Simulator is a Ruby gem which provides functionality for creating
+  discrete time models, and running those models. It provides a simple
+  DSL for defining variables and equations on those variables that you
+  can use to simulate something such as a ball dropping or financial
+  model.
+tags:
+  - simulation
+  - mathematics
+  - gem
+languages: 
+  - Ruby
+tools: 
+  - gem
+links:
+  - type: article
+    url: http://blog.jamie.ly/libraries/2013/01/28/simulator-ruby-gem.html
+  - type: rubygems
+    url: https://rubygems.org/gems/simulator
+  - type: source
+    url: https://github.com/jamiely/simulator

@@ -1,0 +1,10 @@
+title: Jumbly
+description: >
+  A scramble word game for iOS written in Objective-C.
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/software/jumbly-a-jumble-game-for-ios
+  - type: iTunes
+    url: https://itunes.apple.com/us/app/jumbly/id575537890
+  - type: source
+    url: https://github.com/jamiely/jumbly
