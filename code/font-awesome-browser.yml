@@ -3,6 +3,11 @@ languages:
   - Java
 description: >
   A gallery and exporter for Font Awesome glyphs. Written in Java for Android.
+tags: 
+  - fonts
+  - gallery
+tools:
+  - Font Awesome
 links:
   - type: article
     url: http://jamie.ly/wordpress/programming/software/font-awesome-browser
