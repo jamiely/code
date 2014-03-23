@@ -1,0 +1,17 @@
+title: Clojure Breakout
+description: >
+  This is an implementation of the classic game 
+  [Breakout](http://en.wikipedia.org/wiki/Breakout_clone) in Clojure. I 
+  used Aquamacs along with clojure-swank for development, and the 
+  Leiningen is setup for builds.
+
+
+  My implementation draws using Java’s AWT Canvas to render the game
+  board. Collision detection is very basic!
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/software/clojure-breakout/
+  - type: video
+    url: https://www.youtube.com/watch?v=NTMyAltY8iI
+  - type: image
+    url: http://jamie.ly/wordpress/wp-content/uploads/2012/11/screenshot-main.png

@@ -4,6 +4,7 @@ angular.module('codeGalleryApp')
   .factory('ProjectFormatterFactory', function () {
     function transform(project) {
       project.images = [];
+      project.links = project.links || [];
       project.links.forEach(function(link) {
         if(link.type == 'article') {
           project.mainArticleLink = link;

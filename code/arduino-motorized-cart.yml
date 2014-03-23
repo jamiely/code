@@ -1,0 +1,34 @@
+title: Remote-controlled motorized cart
+languages: 
+  - Arduino language
+  - Java
+  - C
+description: >
+  This was a group project in which we took a pre-built motorized cart,
+  and hooked its servos to an Arduino board. By adding an Xbee shield to
+  the Arduino, we had it wirelessly communicate to a server
+  (written in C) hooked to another Arduino and Xbee. We also developed
+  an Android application to function as the remote control for the cart.
+  The application would send instructions to the server, which would
+  send instructions wirelessly to the cart via the Xbees. 
+
+
+  The project required deep understanding of the stack, ability to 
+  develop in several different languages, and debug not only software but
+  hardware components.
+platform: Android
+tools: 
+  - Arduino
+tags: 
+  - embedded devices
+  - mobile application
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/arduino-motorized-cart-project-recap/
+  - type: video
+    url: https://www.youtube.com/watch?v=I1Pw9zQiOBU
+  - type: video
+    url: https://www.youtube.com/watch?v=Ksy-HVB535o
+  - type: image
+    url: http://www.angelforge.org/wordpress/wp-content/uploads/2012/07/arduino-cart_android_app_controller.png
+

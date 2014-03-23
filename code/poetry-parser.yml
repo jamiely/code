@@ -1,0 +1,22 @@
+title: Poetry Parser
+languages:
+  - Haskell
+platform: command-line
+tools: 
+  - ghc
+tags: 
+  - functional programming
+  - parsers
+description: >
+  This Haskell program identifies a body of text piped from STDIN as one of:
+  haiku, rhyming poem (aba, or aabba), sonnet, or limerick.
+
+  The project involved using the 
+  [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict),
+  creating parsers for the dictionary, and base parsers that could be
+  combined for various forms.
+links:
+  - type: article
+    url: http://jamie.ly/wordpress/programming/haskell-poetry-parser/
+  - type: source
+    url: https://github.com/jamiely/poetry-parser

@@ -1,0 +1,16 @@
+title: Holiday Soundboard
+platform: web
+description: >
+  Created as part of a holiday newsletter, the holiday soundboard doesn't 
+  demonstrate much programming acumen, but the article discusses a simple
+  but effective workflow, and competency in basic video processing.
+languages: 
+  - html
+  - css
+tools:
+  - ffmpeg
+links: 
+  - type: article
+    url: http://blog.jamie.ly/programming/2013/12/11/holiday-soundboard.html
+  - type: demo
+    url: http://blog.jamie.ly/baby-sounds/

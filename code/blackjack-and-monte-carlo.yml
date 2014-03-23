@@ -1,0 +1,26 @@
+title: Blackjack and Monte Carlo
+languages:
+  - JavaScript
+  - CSS
+tags:
+  - monte carlo
+  - card games
+  - ai
+  - probability
+description: >
+  I wanted to illustrate the use
+  of monte carlo methods for simple game solving. To make the example
+  digestible, I implemented a bare-bones BlackJack game. 
+  Each player goes in turn, and may either hit or stay. A
+  hint shows at the bottom of the screen that gives advice to the
+  player, based on running a monte carlo simulation of the game at that
+  point.
+links:
+  - type: article
+    url: http://blog.jamie.ly/programming/2014/02/19/blackjack-monte-carlo.html
+  - type: demo
+    url: http://blog.jamie.ly/blackjackjs
+  - type: video
+    url: https://www.youtube.com/watch?v=zunsiNbfGwE
+  - type: source
+    url: https://github.com/jamiely/blackjackjs

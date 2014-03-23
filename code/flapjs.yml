@@ -1,0 +1,18 @@
+title: FlapJS, Quick and Dirty FlappyBird Clone
+description: >
+  Written when FlappyBird was the top Apple App Store app, this is a 
+  bare bones implementation of some of the mechanics.
+
+
+  It is really spare, having implemented mostly just collision
+  generation and detection, simple rendering, and the basic physics
+  necessary. Although the code is fairly neat for several hours' work,
+  it could do with a generous refactoring and should not be considered
+  exemplary code, especially with respect to maintainability.
+links:
+  - type: article
+    url: http://blog.jamie.ly/programming/2014/02/03/flapjs.html
+  - type: image
+    url: http://blog.jamie.ly/assets/2014-02-03-flapjs_532364d.png
+  - type: source
+    url: https://github.com/jamiely/flapjs

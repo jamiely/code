@@ -5,6 +5,9 @@
     <div class="project-description"
       ng-bind-html="project.description"></div>
     <ul class="list-inline">
+      <li ng-show="project.platform" class="platform">
+        <span class="label label-success">{{ project.platform }}</span>
+      </li>
       <li ng-repeat="language in project.languages" class="language">
         <span class="label label-info">{{ language }}</span>
       </li>
